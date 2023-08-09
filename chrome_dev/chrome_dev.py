@@ -18,6 +18,11 @@ class ChromDevWrapper ():
             start_killing (bool, optional): Kill (true) all chrome windows before start. Defaults to True.
         """
         
+        # Validate chrome path
+        if not os.path.exists (chrome_path) or not os.path.isfile (chrome_path):
+            print (f"Chrome path not found: {chrome_path}")
+            sys.exit ()
+        
         if start_killing:
             self.quit ()
             
