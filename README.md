@@ -76,8 +76,8 @@ Create a **.env** file, and place the following content
 
 ```bash
 CHROME_PATH = C:Program FilesGoogleChromeApplicationchrome.exe
-DEBUG_USER = {page user}
-DEBUG_PASS = {page pass}
+DEBUG_USER = your-user-name
+DEBUG_PASS = your-user-pass
 ```
 
 *Note: you can see as reference the **sample.env** file*
